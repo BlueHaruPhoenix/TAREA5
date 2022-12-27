@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" sizes="" href="img/iconos/logo.png" />
+    <meta name="description" content="Curso de HTML-JS-CSS" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"/>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <!-- CSS del proyecto -->
+    <link rel="stylesheet" type="text/css" href="" />
+    <title>Actividad asincrona</title>
+</head>
+<body>
+    <header></header>
+    <nav></nav>
+    <main class="container">
+        <section class="row bg-warning">
+            <h1 class="text-center">ACTIVIDAD ASINCRONA N°5</h1>
+            <p>
+                Caso Propuesto:
+                Una fábrica paga a todos sus empleados de acuerdo a la cantidad de horas que trabaja, de este modo la tarifa por cada hora trabajada varía de acuerdo a su categoría:
+                <p>
+                    Categoría	Tarifa (S/.)
+                    A	S/. 40
+                    B	S/. 35
+                    C	S/. 30
+                </p>
+                <p>
+                    Asimismo, los empleados reciben una bonificación correspondiente a un porcentaje a su sueldo básico de acuerdo a los años de servicio:
+                </p>
+                <p>
+                    Años de servicio	Bonificación
+                    1 - 3	15%
+                    4 - 7	20%
+                    8 - 12	30%
+                    13- más	35 %
+                </p>
+                <p>
+                    Crear un formulario web donde se ingrese los datos solicitados y permita calcular el sueldo básico, bonificación por años de servicio y sueldo neto.
+                </p>
+            </p>
+            <form>
+                <label class="col-12">Ingresa tu nombre:</label>
+                <input type="text" id="nombre" class="m-1 bg-success p-2 text-white rounded-pill">
+                <label class="col-12"> Ingresa tu categoria:</label>
+                <input type="text" id="categoria" class="m-1 bg-success p-2 text-white rounded-pill">
+                <label class="col-12"> Ingresa tus años de servicio:</label>
+                <input type="text" id="anios" class="m-1 bg-success p-2 text-white rounded-pill">
+                <label class="col-12">Tu sueldo neto es:</label>
+                <input type="text" id="sueldo" class="m-1 bg-success p-2 text-white rounded-pill">
+                <p>
+                    <input type="button" id="btnEnviar" value="Enviar" class="btn btn-primary">
+                </p>
+                <p id="resultado"></p>
+            </form>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+</html>
+<script src="js/index.js"></script>
